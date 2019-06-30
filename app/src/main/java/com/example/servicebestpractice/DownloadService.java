@@ -22,7 +22,7 @@ public class DownloadService extends Service {
     private DownloadListener listener = new DownloadListener() {
         @Override
         public void onProgress(int progress) {
-            getNotificationManager().notify(1, getNotification("Downloading...", progress));
+            getNotificationManager().notify(1, getNotification("下载中...", progress));
         }
 
         @Override
